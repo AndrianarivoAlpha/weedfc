@@ -1,38 +1,352 @@
-.App {
-  text-align: center;
+:root {
+  --dark : #082032;
+  --blueDark: #2C394B;
+  --blueLight: #334756;
+  --orange: #FF4C29;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: white;
+}
+.signup-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-image: url(./Components/images/signImg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 300px;
+  padding: 25px 10px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.250);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-i {
+  font-size: 3rem;
+  border: 2px solid white;
+  background-color: #08203295;
+  padding: 2px;
+  border-radius: 50%;
+  color: white;
+}
+.input-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 25pt;
+  width: 300px;
+  font-size: 1.5rem;
+  color: var(--blueDark);
+  background-color: white;
+  margin-top: 20px;
+}
+.input-div input {
+  background: none;
+  border-style: none;
+  height: 100%;
+  width: 250px;
+  outline: none;
+  font-size: 10pt;
+  font-weight: 600;
+}
+.input-div input::placeholder {
+  font-size: 10pt;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  background: #cc3b1f;
+  height: 5rem;
+}
+.logo h1 {
+  color: #082032;
+  font-size: 4rem;
+}
+.logo img {
+  height: 6rem;
+  margin-left: 5px;
+}
+.navigation-div {
+  display: flex;
+  margin: 0;
+}
+.navbar-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100vw;
+}
+.navbar-container img {
+  height: 40px;
+  margin-left: 20pt;
+}
+.hamburger {
+  color: white;
+  font-size: 2rem;
+  background-color: var(--orange);
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 20pt;
+}
+.hamburger:hover {
+  font-size: 2rem;
+  background-color: #9c220a;
+  cursor: pointer;
+}
+.nav-list {
+  z-index: 50;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 100vh;
+  width: auto;
+  animation-name: navAnimated;
+  animation-duration: 0.5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes navAnimated {
+  from {
+    margin-left: -200px;
+  }
+  tp {
+    margin-left: 0;
   }
 }
+.nav-item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 200px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 0 10px 5px;
+  border-right: 5px solid white;
+  border-radius: 10px 0 0 10px;
+}
+.nav-item:hover {
+  border-right: 5px solid var(--orange);
+  color: var(--orange);
+  background-color: #d6e7f3;
+}
+.nav-item span {
+  text-transform: uppercase;
+  margin-left: 12pt;
+  font-weight: 600;
+  font-size: 12pt;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.nav-icon {
+  font-size: 1.4rem;
+}
+
+.landing-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.landing-main {
+  height: 80vh;
+  width: 95vw;
+  margin: auto;
+}
+.landing-main img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.landing-text {
+  position: absolute;
+  margin-left: 2.5vw;
+  margin-top: 40vh;
+}
+.landing-text p {
+  width: auto;
+  color: #2C394B;
+  font-size: 20pt;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.landing-text h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 4rem;
+  margin-top: -40px;
+  border-bottom: 10px solid var(--orange);
+}
+.social-media-div {
+  width: 96vw;
+  text-align: end;
+  margin-top: 5pt;
+}
+.galleries-div {
+  display: flex;
+  flex-direction: column;
+}
+.galleries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 96vw;
+  margin: auto;
+}
+.title-div {
+  height: 40pt;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: var(--orange);
+}
+
+.video-text {
+  display: flex;
+  flex-direction: column;
+}
+.teams-div {
+  margin-top: 20pt;
+}
+.player-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  align-content: space-around;
+}
+.player-card {
+  padding: 20px;
+  height: auto;
+  background-color: #082032;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20pt;
+  margin-top: 20pt;
+}
+.player-card img {
+  height: 400px;
+}
+.player-card .name {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+}
+.player-card .post {
+  margin: 0;
+  color: var(--orange);
+}
+.player-card .post span {
+  font-size: 1.5rem;
+}
+.photos-div {
+  background: var(--blueLight);
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 10pt 0;
+  color: white;
+}
+
+.photo-album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+.slide-image {
+  height: 200px;
+}
+.btn-plus {
+  background: transparent;
+  font-size: 2rem;
+  border: 2px solid var(--orange);
+  padding: 5px 10px;
+  color: var(--orange);
+  cursor: pointer;
+}
+.newsletter-div {
+  margin-top: 20pt;
+  background: var(--dark);
+  height: 500px;
+  width: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.newsletter-div h1 {
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}
+.newsletter-div p {
+  font-size: 15pt;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.newsletter-div button {
+  font-size: 15pt;
+  text-transform: uppercase;
+  color: var(--orange);
+  background: transparent;
+  border: 2px solid var(--orange);
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  
+}
+button {
+  text-transform: uppercase;
+}
+button:hover {
+  color: white;
+  background: var(--orange);
+}
+.newsletter-div input {
+  height: 30pt;
+  margin-bottom: 10pt;
+  width: 380px;
+  font-size: 12pt;
+  outline: none;
+}
+.checkbox-div {
+  width: 300px;
+  display: flex;
+  color: white;
+}
+.checkbox-div input {
+  width: auto;
+  width: 50pt;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width : 420px) {
+  .photos-div {
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .newsletter-div input {
+    width: 320px;
   }
 }
