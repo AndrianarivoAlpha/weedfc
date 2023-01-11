@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/weedfc/static/css/main.0fca9776.css",
+    "main.js": "/weedfc/static/js/main.c99dba66.js",
+    "static/js/496.e044805a.chunk.js": "/weedfc/static/js/496.e044805a.chunk.js",
+    "static/media/landing.jpg": "/weedfc/static/media/landing.539b06e3ad8b4b257e54.jpg",
+    "static/media/signImg2.jpg": "/weedfc/static/media/signImg2.beb4f9dfd50c5d43674d.jpg",
+    "index.html": "/weedfc/index.html",
+    "main.0fca9776.css.map": "/weedfc/static/css/main.0fca9776.css.map",
+    "main.c99dba66.js.map": "/weedfc/static/js/main.c99dba66.js.map",
+    "496.e044805a.chunk.js.map": "/weedfc/static/js/496.e044805a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fca9776.css",
+    "static/js/main.c99dba66.js"
+  ]
+}
