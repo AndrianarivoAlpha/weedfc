@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   --dark : #082032;
   --blueDark: #2C394B;
@@ -5,7 +6,7 @@
   --orange: #FF4C29;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   background: white;
 }
@@ -128,7 +129,7 @@ form {
   from {
     margin-left: -200px;
   }
-  tp {
+  to {
     margin-left: 0;
   }
 }
@@ -149,9 +150,8 @@ form {
   background-color: #d6e7f3;
 }
 .nav-item span {
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-left: 12pt;
-  font-weight: 600;
   font-size: 12pt;
 
 }

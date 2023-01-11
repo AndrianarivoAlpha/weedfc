@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { TbMenu, TbX } from "react-icons/tb";
-import { 
-  FaSlackHash,
-  FaPhotoVideo, 
-  FaPhoneSquareAlt, 
-  FaThumbsUp, 
-} from 'react-icons/fa'
+import {
+  AiOutlineHome,
+  AiOutlinePicture,
+  AiOutlinePhone,
+  AiOutlineHeart
+} from 'react-icons/ai'
 import Logo from '../Logo/Logo';
 
 
@@ -26,22 +26,22 @@ const Navbar = () => {
         hamburgerActive === false && 
         <div className='nav-list' onMouseLeave={() => tabMenu()}>
             <Link to="/" className='nav-item'>
-              <FaSlackHash className='nav-icon'/>
+              <AiOutlineHome className='nav-icon'/>
               <span>acceuil</span>
             </Link>
 
             <Link to="/" className='nav-item' onClick={() => setHamburgerActive(!hamburgerActive)}>
-              <FaPhotoVideo className='nav-icon'/>
+              <AiOutlinePicture className='nav-icon'/>
               <span>gallerie</span>
             </Link>
 
             <Link to="/" className='nav-item' onClick={() => setHamburgerActive(!hamburgerActive)}>
-              <FaPhoneSquareAlt className='nav-icon'/>
+              <AiOutlinePhone className='nav-icon'/>
               <span>Nous contacter</span>
             </Link>
 
             <Link to="/" className='nav-item' onClick={() => setHamburgerActive(!hamburgerActive)}>
-              <FaThumbsUp className='nav-icon'/>
+              <AiOutlineHeart className='nav-icon'/>
               <span>Support</span>
             </Link>
         </div>
