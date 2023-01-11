@@ -7,7 +7,7 @@ import Teams from '../Teams/Teams'
 
 const LandingPage = () => {
   return (
-    <div className="landing-page">
+    <div className="landing-page" id='landing-page'>
       <div className='landing-div'>
         <div className="landing-main">
           <img src={landingMainImg} alt="" />

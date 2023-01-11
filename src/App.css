@@ -151,12 +151,13 @@ form {
 }
 .nav-item span {
   text-transform: capitalize;
-  margin-left: 12pt;
-  font-size: 12pt;
+  margin-left: 8pt;
+  font-size: 10pt;
 
 }
 .nav-icon {
-  font-size: 1.4rem;
+  font-size: 10pt;
+  margin-left: 10pt;
 }
 
 .landing-div {
@@ -323,12 +324,22 @@ button:hover {
   color: white;
   background: var(--orange);
 }
-.newsletter-div input {
+.newsletter-div input  {
   height: 30pt;
   margin-bottom: 10pt;
   width: 380px;
   font-size: 12pt;
   outline: none;
+}
+.newsletter-div textarea {
+  height: 60pt;
+  margin-bottom: 10pt;
+  width: 380px;
+  font-size: 12pt;
+  outline: none;
+}
+.inscription-nl {
+  width: 380px !important; 
 }
 .checkbox-div {
   width: 300px;

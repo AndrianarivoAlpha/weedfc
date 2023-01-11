@@ -14,7 +14,7 @@ const Galleries = () => {
   ]
   
   return (
-    <div className='galleries-div'>
+    <div className='galleries-div' id='galleries-div'>
       <div className="title-div">
         <IoIosFootball style={{
           fontSize: "4rem",
